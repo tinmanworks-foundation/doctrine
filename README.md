@@ -1,15 +1,18 @@
 # Doctrine
 
-This repository contains long-term structural rules and preferences regarding:
+This repository defines long-term structural rules governing:
 
 - Identity usage
 - Username systems
 - Naming conventions
 - Engineering and coding practices
+- How this doctrine repository itself is managed
 
 It serves as:
-1. A persistent reference for decision consistency.
-2. A context source for AI tools when generating code or structuring projects.
 
-Only stable and structural decisions belong here.
-This is not a brainstorming repository.
+1. A persistent reference for consistent decision-making.
+2. A source of truth for AI-assisted development.
+3. A stable baseline for engineering conventions.
+
+Only structural decisions belong here.
+This repository is not for brainstorming or temporary ideas.
