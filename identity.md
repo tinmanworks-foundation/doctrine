@@ -1,6 +1,6 @@
 # Identity Structure
 
-Status: Draft
+Status: Draft  
 Last Reviewed: 2026-02-27
 
 ## Scope

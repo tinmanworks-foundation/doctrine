@@ -1,6 +1,6 @@
 # Repo Management (Doctrine only)
 
-Status: Draft
+Status: Draft  
 Last Reviewed: 2026-02-27
 
 ## Scope
