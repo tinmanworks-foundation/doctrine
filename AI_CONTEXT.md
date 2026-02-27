@@ -1,35 +1,53 @@
 # AI Context
 
-This file provides quick doctrine rules for AI-assisted work.
+Purpose: Provide consistent context to AI tools about identity, naming, and engineering practices.
+
+---
 
 ## Identity
 
-- George Gil → legal/social identity
-- TinMan → engineering authorship
-- TinkerSpace → environments/spaces
+Primary engineering identity: TinMan  
+Real/legal identity: George Gil
 
-## Username Rules
+Public authorship should default to TinMan unless explicitly personal/legal.
 
-Use tinman with tier fallback:
+---
 
-tinman → tinmanlab → tinmanforge → tinmansystems → tinmanworks → tinmanstudio
+## Naming Tiers
 
-## Naming
+Fallback order for usernames:
 
-- repos: lowercase kebab-case
-- classes: PascalCase
-- variables: camelCase
-- no randomness or unnecessary numbers
+1. tinman
+2. tinmanworks
+3. tinmanlab
+4. tinmanstudio
+5. tinmansystems
+6. tinmanbuild
 
-## Coding
+Avoid unrelated suffixes.
 
-- modular architecture
-- separate core from UI
-- layered systems
-- use CMake for C++
-- avoid global state
+---
 
-## AI Usage
+## Repository Standards
 
-AI suggestions must follow doctrine rules.
-Doctrine overrides default AI assumptions.
+Follow:
+
+- project-standards.md for repo structure
+- naming.md for naming
+- coding.md for engineering conventions
+
+---
+
+## Technology Orientation
+
+Primary domains:
+
+- Systems programming
+- Robotics
+- Platform engineering
+- Graphics/rendering
+- Backend systems
+- Cross-platform apps
+- Mechanical prototyping
+
+AI suggestions should align with modular, layered architecture.

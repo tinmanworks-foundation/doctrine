@@ -1,18 +1,45 @@
 # Doctrine
 
-This repository defines long-term structural rules governing:
+Centralized engineering doctrine defining identity, naming, coding philosophy, and project standards.
 
-- Identity usage
-- Username systems
-- Naming conventions
-- Engineering and coding practices
-- How this doctrine repository itself is managed
+This repository is the reference point for all personal engineering decisions.
 
-It serves as:
+---
 
-1. A persistent reference for consistent decision-making.
-2. A source of truth for AI-assisted development.
-3. A stable baseline for engineering conventions.
+## Navigation
 
-Only structural decisions belong here.
-This repository is not for brainstorming or temporary ideas.
+### Identity
+
+- identity.md → Identity structure and usage
+- usernames.md → Username tier rules
+
+### Naming
+
+- naming.md → Naming conventions across projects
+
+### Engineering
+
+- coding.md → Coding and architecture principles
+- project-standards.md → Repository structure, README, documentation, demo rules
+
+### Repository Governance
+
+- repo-management.md → Branching, release, and workflow rules
+
+### AI Usage
+
+- AI_CONTEXT.md → Context provided to AI tools
+
+---
+
+## Purpose
+
+Doctrine exists to:
+
+- Reduce decision fatigue
+- Maintain consistency
+- Enable scalable engineering
+- Keep identity separation clear
+- Standardize project structure
+
+Doctrine evolves over time but remains stable once practices settle.

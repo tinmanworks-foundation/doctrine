@@ -1,50 +1,95 @@
-# Coding Preferences
+# Coding Principles
 
-Status: Draft
+Status: Active  
 Last Reviewed: 2026-02-27
 
 ## Scope
 
-Defines engineering preferences for projects authored under TinMan.
+Defines engineering and coding preferences.
 
-## Core Philosophy
-
-- Prefer modular architecture.
-- Separate core logic from UI.
-- Minimize tight coupling.
-- Design for long-term scalability.
-- Avoid premature optimization.
+Repository structure and documentation rules are defined in `project-standards.md`.
 
 ---
 
-## C++ Guidelines
+## Architecture Preference
 
-- Use CMake.
-- Prefer modern C++.
-- Avoid raw pointers where possible.
-- Keep headers minimal.
-- Minimize global state.
+Prefer:
 
----
+- Modular architecture
+- Clear separation of concerns
+- Layered systems
+- Minimal coupling
+- Explicit interfaces
 
-## Project Structure
+Avoid:
 
-Prefer clear separation between:
-
-- Core engine
-- Interface layer
-- Plugins/modules
-
-Avoid monolithic structures.
-Prefer layered systems.
+- Monolithic logic
+- Hidden dependencies
+- Overengineering abstractions
 
 ---
 
-## AI Usage Rule
+## Language Usage
 
-When generating code using AI:
+### C/C++
 
-- Provide relevant doctrine context.
-- Enforce naming conventions.
-- Enforce architecture preferences.
-- Review before permanent adoption.
+Use for:
+
+- Systems programming
+- Performance-critical code
+- Engines
+- Embedded work
+
+Prefer:
+
+- RAII
+- Modern C++ features where beneficial
+- Clear ownership semantics
+
+---
+
+### Python
+
+Use for:
+
+- Tooling
+- Backend services
+- Data processing
+- Experimentation
+
+Prefer:
+
+- Clear structure
+- Minimal global state
+- Explicit dependencies
+
+---
+
+## Build Systems
+
+Prefer:
+
+- CMake for C/C++
+- Native ecosystem tools otherwise
+
+Builds must be reproducible.
+
+---
+
+## General Principles
+
+- Code clarity over cleverness
+- Explicit over implicit
+- Stability over novelty
+- Maintainability over shortcuts
+
+---
+
+## Comments
+
+Explain:
+
+- Why something exists
+- Non-obvious decisions
+
+Avoid obvious comments.
