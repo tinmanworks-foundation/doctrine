@@ -11,12 +11,12 @@ Defines fallback rules when "tinman" is unavailable.
 
 ## Tier Escalation
 
-Tier 0: tinman  
-Tier 1: tinmanlab  
-Tier 2: tinmanforge  
-Tier 3: tinmansystems  
-Tier 4: tinmanworks  
-Tier 5: tinmanstudio  
+Tier 0: tinman
+Tier 1: tinmanworks
+Tier 2: tinmanlab
+Tier 3: tinmanstudio
+Tier 4: tinmansystems
+Tier 5: tinmanbuild
 
 ---
 
