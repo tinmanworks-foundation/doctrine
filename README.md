@@ -1,4 +1,4 @@
-# My Doctrine
+# Doctrine
 
 This repository contains long-term structural rules and preferences regarding:
 
