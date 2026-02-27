@@ -1,32 +1,42 @@
-# Repo Management (Doctrine only - this repo)
+# Repo Management (Doctrine only)
 
 Status: Draft
 Last Reviewed: 2026-02-27
 
 ## Scope
-These rules apply only to this repository.
+
+Applies only to this repository.
 
 ## Branch Model
-- master: stable snapshots of the repository (may include Draft documents)
-- develop: working branch (Drafts expected)
-- feature branches: short-lived, used only for heavy refactors (feat/*)
+
+- master → stable snapshots (may include Draft files)
+- develop → working branch
+- feature/* → short-lived heavy refactor branches
 
 ## Release Process
-1. Create a release branch from develop: release/vX.Y
-2. On the release branch:
-   - Promote only ready documents from Draft -> Stable
-   - Leave other documents as Draft
-   - Add/Update RELEASE_NOTES.md with a manifest of Stable vs Draft files
-3. Merge release branch into master
-4. Tag on master: vX.Y
 
-## Document Status Rules
-- Each doctrine file must include:
-  - Status: Draft | Stable | Deprecated
-  - Last Reviewed: YYYY-MM-DD
-- Draft files may be included in releases but are not considered authoritative for copy/paste usage.
-- Stable files are considered safe to copy/paste into AI contexts.
+1. Create release/vX.Y from develop.
+2. On release branch:
+   - Promote ready files Draft → Stable.
+   - Leave others Draft.
+   - Update RELEASE_NOTES.md.
+3. Merge release → master.
+4. Tag master as vX.Y.
+
+## Document Status
+
+Each file must contain:
+
+- Status: Draft | Stable | Deprecated
+- Last Reviewed date
+
+Draft:
+May change.
+
+Stable:
+Safe for AI copy/paste.
 
 ## Tag Meaning
-- vX.Y tags mark a stable repository snapshot.
-- Tags do not imply every file is Stable.
+
+Tags mark stable repository snapshots.
+They do not imply all files are Stable.
