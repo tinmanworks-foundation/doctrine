@@ -18,15 +18,14 @@ Public authorship should default to TinMan unless explicitly personal/legal.
 
 ## Naming Tiers
 
-Fallback order for usernames:
+Use `usernames.md` as source of truth.
 
-1. tinman
-2. tinmanworks
-3. tinmanlab
-4. tinmanstudio
-5. tinmansystems
-6. tinmanbuild
+Choose identity first:
 
+- TinMan ladder for engineering/public technical authorship.
+- TinkerSpace ladder for studio/environment/workspace contexts.
+
+Then apply sequential fallback within that ladder only.
 Avoid unrelated suffixes.
 
 ---

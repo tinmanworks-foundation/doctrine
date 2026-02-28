@@ -1,15 +1,15 @@
 # Username Tier System
 
 Status: Draft  
-Last Reviewed: 2026-02-27
+Last Reviewed: 2026-02-28
 
 ## Scope
 
-Defines fallback rules when "tinman" is unavailable.
+Defines fallback rules for TinMan and TinkerSpace usernames/workspace slugs.
 
 ---
 
-## Tier Escalation
+## Tier Escalation (TinMan)
 
 Tier 0: tinman
 Tier 1: tinmanworks
@@ -20,13 +20,29 @@ Tier 5: tinmanbuild
 
 ---
 
+## Tier Escalation (TinkerSpace)
+
+Tier 0: tinkerspace
+Tier 1: tinkerspaceworks
+Tier 2: tinkerspacelab
+Tier 3: tinkerspacestudio
+Tier 4: tinkerspacesystems
+Tier 5: tinkerspacebuild
+
+---
+
 ## Rules
 
-1. Always attempt Tier 0 first.
-2. If unavailable, move sequentially.
-3. Never skip tiers.
-4. Never introduce unlisted suffixes.
-5. Avoid numbers unless absolutely unavoidable.
+1. Choose identity first by context:
+   - TinMan for engineering authorship, developer profiles, and technical communities.
+   - TinkerSpace for studio/environment/workspace contexts (for example Linear workspace URLs).
+2. Always attempt Tier 0 first.
+3. If unavailable, move sequentially.
+4. Never skip tiers.
+5. Never mix TinMan and TinkerSpace ladders in the same platform scope.
+6. Never introduce unlisted suffixes.
+7. Avoid numbers unless all listed tiers are unavailable.
+8. If numbers are unavoidable, append a two-digit suffix (`01`, `02`, ...) to the last tier only.
 
 ---
 
