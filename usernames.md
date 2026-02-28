@@ -1,6 +1,6 @@
 # Username Tier System
 
-Status: Draft  
+Status: Stable  
 Last Reviewed: 2026-02-28
 
 ## Scope
