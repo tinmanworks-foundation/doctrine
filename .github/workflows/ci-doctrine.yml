@@ -1,0 +1,53 @@
+name: CI (Doctrine)
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * 1"
+
+jobs:
+  core-doctrine:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate doctrine metadata
+        run: |
+          set -euo pipefail
+          files=(
+            "README.md"
+            "AI_CONTEXT.md"
+            "RELEASE_NOTES.md"
+            "coding.md"
+            "cpp-template-family.md"
+            "doctrine-governance.md"
+            "identity.md"
+            "naming.md"
+            "project-standards.md"
+            "repo-management.md"
+            "usernames.md"
+          )
+          for f in "${files[@]}"; do
+            [ -f "$f" ] || { echo "Missing required doctrine file: $f"; exit 1; }
+            grep -q '^Status: ' "$f" || { echo "Missing Status in $f"; exit 1; }
+            grep -q '^Last Reviewed: ' "$f" || { echo "Missing Last Reviewed in $f"; exit 1; }
+          done
+
+      - name: Validate doctrine links
+        run: |
+          set -euo pipefail
+          for f in README.md repo-management.md doctrine-governance.md project-standards.md coding.md naming.md identity.md AI_CONTEXT.md; do
+            [ -f "$f" ] || continue
+            while IFS= read -r link; do
+              target=$(echo "$link" | sed -E 's/^[^()]*\(([^)]+)\)$/\1/')
+              case "$target" in
+                http://*|https://*|mailto:*|#*) continue ;;
+              esac
+              path="${target%%#*}"
+              [ -z "$path" ] && continue
+              [ -e "$path" ] || { echo "Broken link in $f -> $target"; exit 1; }
+            done < <(grep -oE '\[[^][]+\]\([^)]*\)' "$f" || true)
+          done
