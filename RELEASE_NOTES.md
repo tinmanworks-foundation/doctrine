@@ -18,7 +18,7 @@ Last Reviewed: 2026-02-28
 ### Notes
 - Added thin C/C++ template family doctrine with stable setup and dependency contracts.
 - Added generalized setup-friction minimization principles to core standards.
-- Updated doctrine bootstrap scripts to copy new doctrine file into repository snapshots.
+- Updated doctrine bootstrap scripts and kept C/C++-specific doctrine out of generic snapshot copy lists.
 
 ## v0.1.0 - 2026-02-28
 

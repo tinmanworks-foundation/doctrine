@@ -43,7 +43,6 @@ Copy-DoctrineFile -SourceRel "templates/AGENTS.md" -DestRel "AGENTS.md"
 Copy-DoctrineFile -SourceRel "AI_CONTEXT.md" -DestRel "AI_CONTEXT.md"
 
 $DoctrineFiles = @(
-    "cpp-template-family.md",
     "coding.md",
     "doctrine-governance.md",
     "identity.md",
