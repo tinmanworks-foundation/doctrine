@@ -3,6 +3,22 @@
 Status: Stable  
 Last Reviewed: 2026-02-28
 
+## v0.1.2 - 2026-02-28
+
+### Added Files
+- CODEOWNERS
+- .github/workflows/release-tag.yml
+- .github/workflows/ci-master-promotion.yml
+
+### Updated Files
+- repo-management.md
+
+### Notes
+- Added root ownership mapping with `* @tinmanworks`.
+- Added draft GitHub release automation for semantic tags (`v*`) with generated release notes.
+- Canonicalized branch promotion flow as `develop -> master` for releases and tagging on `master`.
+- Added enforcement check requiring PRs to `master` to originate from `develop`.
+
 ## v0.1.1 - 2026-02-28
 
 ### Added Files
