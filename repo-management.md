@@ -8,6 +8,12 @@ Last Reviewed: 2026-02-28
 Applies to all repositories in this ecosystem.
 This is policy and doctrine, not automation.
 
+## Companion Artifacts
+
+- Governance process: [`doctrine-governance.md`](doctrine-governance.md)
+- Repo visibility note template: [`templates/repo-visibility-note-template.md`](templates/repo-visibility-note-template.md)
+- Doctrine change record template: [`templates/doctrine-change-record-template.md`](templates/doctrine-change-record-template.md)
+
 ## Rule Order (enforce in this order)
 
 1. Commit signing policy
@@ -135,7 +141,7 @@ This section applies only to this Doctrine repository.
 2. On release branch:
    - Promote ready files `Draft -> Stable`.
    - Leave others `Draft`.
-   - Update [`RELEASE_NOTES.md`](/Users/georgegil/Projects/Doctrine/RELEASE_NOTES.md).
+   - Update [`RELEASE_NOTES.md`](RELEASE_NOTES.md).
 3. Merge release to `master`.
 4. Tag `master` as `vX.Y`.
 

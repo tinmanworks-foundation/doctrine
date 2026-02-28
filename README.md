@@ -1,5 +1,8 @@
 # Doctrine
 
+Status: Stable  
+Last Reviewed: 2026-02-28
+
 Centralized engineering doctrine defining identity, naming, coding philosophy, and project standards.
 
 This repository acts as a persistent reference for engineering decisions and conventions.
@@ -24,7 +27,10 @@ This repository acts as a persistent reference for engineering decisions and con
 
 ### Repository Governance
 
-- [Repository Management](repo-management.md)
+- [Repo Governance Doctrine](repo-management.md)
+- [Doctrine Governance](doctrine-governance.md)
+- [Repo Visibility Note Template](templates/repo-visibility-note-template.md)
+- [Doctrine Change Record Template](templates/doctrine-change-record-template.md)
 
 ### AI Usage
 
@@ -47,6 +53,8 @@ Use it as a reference:
 - Writing code → check Coding
 - Setting identity → check Identity/Usernames
 - Using AI → provide AI Context
+- Changing policy → check Doctrine Governance + DCR Template
+- Preparing repo visibility decision → use Visibility Note Template
 
 ---
 
