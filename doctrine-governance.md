@@ -50,6 +50,15 @@ Promote `Draft -> Stable` only when all are true:
 - Rule was validated in at least one real repository.
 - No conflicts with higher-precedence doctrine files.
 
+## Release Gates
+
+Before publishing a doctrine release tag:
+
+- Tag must be signed (`git tag -s`).
+- Tag must point to the intended release commit on `master`.
+- GitHub must show the tag as verified (requires SSH key registered as a Signing Key).
+- If an unsigned tag was pushed, replace it with a signed tag on the same commit and force-push the tag.
+
 ## Review Cadence
 
 - Full doctrine review every 90 days.
