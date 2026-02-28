@@ -1,7 +1,7 @@
 # Coding Principles
 
-Status: Active  
-Last Reviewed: 2026-02-27
+Status: Stable  
+Last Reviewed: 2026-02-28
 
 ## Scope
 

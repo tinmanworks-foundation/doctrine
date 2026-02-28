@@ -1,5 +1,8 @@
 # AI Context
 
+Status: Stable  
+Last Reviewed: 2026-02-28
+
 Purpose: Provide consistent context to AI tools about identity, naming, and engineering practices.
 
 ---
