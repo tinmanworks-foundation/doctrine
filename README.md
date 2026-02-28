@@ -39,6 +39,7 @@ This repository acts as a persistent reference for engineering decisions and con
 ### Meta
 
 - [Release Notes](RELEASE_NOTES.md)
+- [Bootstrap Scripts](tools/README.md)
 
 ---
 
@@ -67,3 +68,29 @@ Doctrine exists to:
 - Preserve engineering identity
 - Standardize project structure
 - Improve long-term maintainability
+
+---
+
+## Bootstrap Any Repository
+
+Use the bootstrap scripts in [`tools/`](tools/) to copy doctrine files into any project repo.
+
+### macOS / Linux
+
+```bash
+./tools/doctrine-bootstrap.sh /path/to/target-repo
+```
+
+### Windows PowerShell
+
+```powershell
+.\tools\doctrine-bootstrap.ps1 -TargetRepo C:\path\to\target-repo
+```
+
+### Windows CMD
+
+```cmd
+tools\doctrine-bootstrap.cmd C:\path\to\target-repo
+```
+
+Use `--force` (Bash) or `-Force` (PowerShell) to overwrite existing doctrine files.
