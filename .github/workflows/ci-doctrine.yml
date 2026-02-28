@@ -43,9 +43,7 @@ jobs:
             [ -f "$f" ] || continue
             while IFS= read -r link; do
               target=$(echo "$link" | sed -E 's/^[^()]*\(([^)]+)\)$/\1/')
-              case "$target" in
-                http://*|https://*|mailto:*|#*) continue ;;
-              esac
+              [[ "$target" =~ ^(http://|https://|mailto:|#) ]] && continue
               path="${target%%#*}"
               [ -z "$path" ] && continue
               [ -e "$path" ] || { echo "Broken link in $f -> $target"; exit 1; }
