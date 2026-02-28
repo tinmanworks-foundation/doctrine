@@ -24,6 +24,7 @@ This repository acts as a persistent reference for engineering decisions and con
 
 - [Coding Principles](coding.md)
 - [Project Standards](project-standards.md)
+- [C/C++ Template Family Doctrine](cpp-template-family.md)
 
 ### Repository Governance
 
@@ -52,6 +53,7 @@ Use it as a reference:
 - Starting a project → check Project Standards
 - Naming something → check Naming
 - Writing code → check Coding
+- Building template ecosystems → check C/C++ Template Family Doctrine
 - Setting identity → check Identity/Usernames
 - Using AI → provide AI Context
 - Changing policy → check Doctrine Governance + DCR Template

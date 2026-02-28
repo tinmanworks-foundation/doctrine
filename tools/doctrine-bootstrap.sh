@@ -78,6 +78,7 @@ copy_file "${doctrine_root}/templates/AGENTS.md" "AGENTS.md"
 copy_file "${doctrine_root}/AI_CONTEXT.md" "AI_CONTEXT.md"
 
 for doctrine_file in \
+  cpp-template-family.md \
   coding.md \
   doctrine-governance.md \
   identity.md \
