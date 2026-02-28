@@ -41,6 +41,21 @@ Not all folders must exist, but structure should remain predictable.
 
 ---
 
+## Setup Friction Minimization
+
+Repositories should minimize setup work for first-time contributors and users.
+
+Defaults:
+
+- Keep clone-to-first-build steps short and explicit.
+- For non-trivial prerequisites, provide setup scripts under `tools/setup/`.
+- Prefer a doctor/validation path before install automation.
+- Classify dependencies as required vs optional.
+- Ensure optional tooling never blocks the default build/run path.
+- Document setup checks and fallback commands in README.
+
+---
+
 ## README Standard
 
 Every repository README must answer:

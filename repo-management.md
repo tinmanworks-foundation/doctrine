@@ -44,12 +44,19 @@ Verification:
 
 ```bash
 git log --show-signature -1
+git tag -v vX.Y
 ```
 
 Expected result:
 
 - Local signature is present.
 - GitHub shows `Verified` on commits.
+- Release tags are signed and verified.
+
+Tag signing rule:
+
+- Release tags must be signed (`git tag -s`), not only annotated (`git tag -a`).
+- Ensure the SSH public key is added on GitHub as a Signing Key so verification appears.
 
 ### GitHub enforcement baseline
 
@@ -143,7 +150,15 @@ This section applies only to this Doctrine repository.
    - Leave others `Draft`.
    - Update [`RELEASE_NOTES.md`](RELEASE_NOTES.md).
 3. Merge release to `master`.
-4. Tag `master` as `vX.Y`.
+4. Create signed tag on `master`:
+   - `git tag -s vX.Y -m "Release vX.Y"`
+5. Push `master` and tag:
+   - `git push origin master`
+   - `git push origin vX.Y`
+6. If tag was created unsigned by mistake, recreate it as signed on the same commit and force-push:
+   - `git tag -d vX.Y`
+   - `git tag -s vX.Y -m "Release vX.Y" <release-commit>`
+   - `git push --force origin vX.Y`
 
 ### Document status model
 
