@@ -1,7 +1,18 @@
 # Release Notes
 
 Status: Stable  
-Last Reviewed: 2026-02-28
+Last Reviewed: 2026-03-04
+
+## v0.1.3 - 2026-03-04
+
+### Updated Files
+- repo-management.md
+- templates/AGENTS.md
+
+### Notes
+- Added a GitHub Projects issue/commit granularity policy requiring issue-driven work, small unambiguous issues, and small issue-scoped commit sets by default.
+- Added explicit exceptions for non-diff operational tasks, discovery-first work, and unavoidable architecture-level changes with required rationale.
+- Updated AI agent guidance to require clear issue linkage for project-managed repos and to keep commit scope aligned to issue scope.
 
 ## v0.1.2 - 2026-02-28
 
