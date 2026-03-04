@@ -3,6 +3,20 @@
 Status: Stable  
 Last Reviewed: 2026-03-04
 
+## v0.1.4 - 2026-03-04
+
+### Updated Files
+- repo-management.md
+- templates/AGENTS.md
+- .github/workflows/ci-master-promotion.yml
+
+### Notes
+- Updated repository workflow policy so `master` remains stable and releases are promoted from `release/*` branches cut from `develop`.
+- Added explicit protected-branch rules: no direct push to `master`/`develop`, and no admin bypass for protected-branch enforcement.
+- Added emergency release branch guidance (`release/hotfix-*`) with merge-back to both `master` and `develop`.
+- Updated master-promotion CI guard to require PRs into `master` to originate from `release/*`.
+- Updated AI agent guidance to avoid direct protected-branch pushes even under admin credentials.
+
 ## v0.1.3 - 2026-03-04
 
 ### Updated Files
