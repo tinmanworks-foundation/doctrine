@@ -3,7 +3,7 @@
 Status: Stable  
 Last Reviewed: 2026-03-04
 
-## v0.1.4 - 2026-03-04
+## v0.2.0 - 2026-03-04
 
 ### Updated Files
 - repo-management.md
